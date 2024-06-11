@@ -14,14 +14,11 @@
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/27a4a64f-8557-4344-9081-355fd9a9f756" alt="Logo" ">
   </a>
-
   <h1 align="center">AI training graphical representation</h1>
-
   <p align="center">
     Python-Unity pipeline that transforms dry numerical data into engaging 3D object animations within a Unity environment    <br />
     <br />
     <br />
-    
   </p>
 </div>
 
@@ -73,9 +70,9 @@ This project seeks to revolutionize the way AI developers interact with training
 
 ## Built with
 
-* ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
-* ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-* ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
+ ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
+ ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+ ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,13 +101,14 @@ The overarching goal is to provide a reusable template. This template streamline
 The project setup is designed to be straightforward and user-friendly. Developers can initiate the VR tour experience by launching the Unity program and entering "play mode" (achieved by pressing the play button within the editor interface). This action triggers the activation of a TCP server within the Unity environment. 
 This server remains in a listening state, awaiting an incoming event.
 Subsequently, the developer can execute the Python script. This script, for enhanced flexibility, can be stored in any desired location on the developer's computer, independent of the Unity project directory. Once initiated, the Python script commences the process of transmitting the chosen data to the Unity application. The developer can then observe the object within the VR environment updating in real-time as the data stream is received.
+
 The developer's primary interaction with the codebase involves two key areas. Within the Python script, modifications can be made to the section responsible for selecting the data to be transmitted. Additionally, the format of the data can be adjusted if necessary to ensure compatibility with the trained model being employed. On the Unity side, the developer can focus on customizing the object manipulation logic within the C# code. This customization allows for tailoring the behavior of the object based on the specific needs of the project, including the names and quantities of the data elements being received.
 
 ### EnergAI: Smart water grid project implementation
 
 Following the development of the core environment, the next stage involved adapting the basic template to represent a more intricate scenario. This scenario aimed to visualize an AI training process relevant to a project undertaken by a colleague. Her project focused on training a model to work with temperature and steam data. To facilitate this, I constructed a virtual chemistry lab environment. The environment featured four glass thermometers, each representing a crucial data value for visualization. The filling level of each thermometer scaled dynamically based on the received data. Additionally, text boxes were implemented to display the corresponding data name and its associated value. Data transmission occurred in a row-by-row manner, iterating through a CSV file and sending each row sequentially.
 
-ADD VIDEO 
+https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/1e248bc8-22c9-4468-ab21-1937c008a589
 
 ## Future applications and usage
 
@@ -185,11 +183,11 @@ And make sure the socket reference is the same and is free in your machine, and 
 
 <p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f" width="800" height="500"> </p>
 
-You can now start the application, run the "Server" first (the C# script) by cliccking on the play button in the editor (top of the screen)
+You can now start the application, run the "Server" first (the C# script) by clicking on the play button in the editor (top of the screen)
 
 <p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/db64b3de-1bc1-4260-998a-7b0ae771b13e" width="800" height="500"> </p>
 
-The next and last step is to run the "Client" (the python script), make sure that your csv file is in the same directory of your python script (the .py and the .csv can be stored anywhere in your machine, not only in the unity project directory, nut the .cs has to be in there!) 
+The next and last step is to run the "Client" (the python script), make sure that your csv file is in the same directory of your python script (the .py and the .csv can be stored anywhere in your machine, not only in the unity project directory, but the .cs has to be in there!) 
 Once you are done you should see something like this:
 
 https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/3e2230ab-9c1b-4cbf-aa86-29c865757ad6
