@@ -1,7 +1,7 @@
 <a name="AI training graphical representation"></a>
 
+<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-lightblue">
 
-<a href="https://github.com/FabrizioDeFiore/ReadmeTest/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/FabrizioDeFiore/ReadmeTest/blob/gh-pages/version.svg"></a>
 <a href="https://github.com/SmartTechAIResearch/template-python-project/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/SmartTechAIResearch/template-python-project/blob/gh-pages/date.svg"></a>
 <a href="https://github.com/SmartTechAIResearch/template-python-project/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/SmartTechAIResearch/template-python-project/blob/gh-pages/language.svg"></a>
 
