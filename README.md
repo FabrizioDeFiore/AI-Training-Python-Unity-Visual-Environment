@@ -27,26 +27,30 @@
 <!-- TABLE OF CONTENTS -->
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#project-description">Project description</a>
+    <li><a href="#project-description">Project description</a> </li>
       <ul>
+        <li><a href="#the-challenge">The challenge</a></li>
         <li><a href="#built-with">Built with</a></li>
         <li><a href="#how-does-it-work">How does it work</a></li>
       </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
+    <li><a href="#what's-in-the-project">What's in the project</a></li>
+      <ul>
+        <li><a href="#base-template">Base template</a></li>
+        <li><a href="#EnergAI:-Smart-water-grid-project-implementation">EnergAI: Smart water grid project implementation</a></li>
+      </ul>
+    <li><a href="#Future-applications-and-usage">Future applications and usage</a></li>
+    <li><a href="#How-to-install-and-run">How to install and run</a></li>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#running">running</a></li>
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#how-to-use">How to use</a></li>
+    <ul>
+        <li><a href="#understand-the-code">Understand the code</a></li>
+        <li><a href="#basic-template-editing">Basic template editing</a></li>
+        <li><a href="#chemistry-lab-template">Chemistry lab template editing</a></li>
+    </ul>
   </ol>
 
 
@@ -91,9 +95,9 @@ This approach facilitates real-time communication and dynamic object updates wit
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## What's in the project?
+# What's in the project?
 
-### Base template
+## Base template
 
 In the initial phase of this project, the objective was to establish a foundational environment. This environment prioritizes ease of modification and manages data exchange between Python and Unity. Additionally, it enables the manipulation of object positions. 
 The overarching goal is to provide a reusable template. This template streamlines the development process by pre-configuring the communication aspects, allowing developers to concentrate solely on minor adjustments to the 3D environment for optimal data integration.
@@ -104,13 +108,13 @@ Subsequently, the developer can execute the Python script. This script, for enha
 
 The developer's primary interaction with the codebase involves two key areas. Within the Python script, modifications can be made to the section responsible for selecting the data to be transmitted. Additionally, the format of the data can be adjusted if necessary to ensure compatibility with the trained model being employed. On the Unity side, the developer can focus on customizing the object manipulation logic within the C# code. This customization allows for tailoring the behavior of the object based on the specific needs of the project, including the names and quantities of the data elements being received.
 
-### EnergAI: Smart water grid project implementation
+## EnergAI: Smart water grid project implementation
 
 Following the development of the core environment, the next stage involved adapting the basic template to represent a more intricate scenario. This scenario aimed to visualize an AI training process relevant to a project undertaken by a colleague. Her project focused on training a model to work with temperature and steam data. To facilitate this, I constructed a virtual chemistry lab environment. The environment featured four glass thermometers, each representing a crucial data value for visualization. The filling level of each thermometer scaled dynamically based on the received data. Additionally, text boxes were implemented to display the corresponding data name and its associated value. Data transmission occurred in a row-by-row manner, iterating through a CSV file and sending each row sequentially.
 
 https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/1e248bc8-22c9-4468-ab21-1937c008a589
 
-## Future applications and usage
+# Future applications and usage
 
 The future vision for this project entails enhancing the Unity environment for user customization through the development of a dedicated editor plugin. This plugin will cater to AI developers with expertise in Python, potentially lacking experience or possessing only rudimentary knowledge of Unity and C#. The editor plugin will empower them to modify and personalize the environment without requiring direct interaction with C# code or manipulation of 3D objects.
 
@@ -193,113 +197,22 @@ Once you are done you should see something like this:
 https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/3e2230ab-9c1b-4cbf-aa86-29c865757ad6
 
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+# How to use
 
-<!-- ROADMAP -->
-# Roadmap
+## Understand the code
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Basic template editing
 
 
 
-<!-- CONTRIBUTING -->
-# Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-# License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
 # Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-# Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
