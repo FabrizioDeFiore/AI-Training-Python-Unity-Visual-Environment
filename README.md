@@ -154,27 +154,30 @@ _Below is an example of how you can instruct your audience on installing and set
 
 To run this project, locate the directory you just cloned into your unity hub and open the project
 
-
-![unityhub](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/ee63c679-96f0-4b43-ae6c-8d149d24f74e)
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/ee63c679-96f0-4b43-ae6c-8d149d24f74e" width="800" height="500" > </p>
 
 Locate the Project tab (if you can't find, use the toolbar on the top and go under Window > General > Project) and make sure you are running the scene BaseTemplate (Assets > Scenes > BaseTemplate)
 
-![projectTabh](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49)
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49" width="800" height="500"> </p>
 
 Open both the C# Listener and Python Client (Assets > Scripts > Client.py & Listener.cs)
 
-![projectTaScripts](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb)
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb" width="800" height="500"> </p>
 
 And make sure the socket reference is the same and is free in your machine, and the localhost is correct
 
-![codelistclent](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f)
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f" width="800" height="500"> </p>
 
 You can now start the application, run the "Server" first (the C# script) by cliccking on the play button in the editor (top of the screen)
 
-![play](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/db64b3de-1bc1-4260-998a-7b0ae771b13e)
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/db64b3de-1bc1-4260-998a-7b0ae771b13e" width="800" height="500"> </p>
 
-The next and last step is to run the "Client" (the python script), make sure that your csv file is in the same directory of your python script (the .py and the .csv can be stored anywhere in your machine, not only in the unity project directory, nut the .cs has to be in there!)
+The next and last step is to run the "Client" (the python script), make sure that your csv file is in the same directory of your python script (the .py and the .csv can be stored anywhere in your machine, not only in the unity project directory, nut the .cs has to be in there!) 
 Once you are done you should see something like this:
+
+https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/3e2230ab-9c1b-4cbf-aa86-29c865757ad6
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
