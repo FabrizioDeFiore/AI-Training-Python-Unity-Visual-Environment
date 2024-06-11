@@ -1,6 +1,10 @@
 <a name="AI training graphical representation"></a>
 
-<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-lightblue">
+<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/last updated-date.svg-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-blue">
+
 
 <a href="https://github.com/SmartTechAIResearch/template-python-project/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/SmartTechAIResearch/template-python-project/blob/gh-pages/date.svg"></a>
 <a href="https://github.com/SmartTechAIResearch/template-python-project/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/SmartTechAIResearch/template-python-project/blob/gh-pages/language.svg"></a>
@@ -63,7 +67,7 @@
   </ol>
 
 
-
+ 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -101,8 +105,8 @@ This project seeks to revolutionize the way AI developers interact with training
 * <a href="https://unity.com/download"> Unity Hub </a>
 * <a href="https://unity.com/releases/editor/whats-new/2022.3.10#installs"> Unity Editor 2022.3.10f1 or higher </a>
 * <a href="https://www.python.org/downloads/release/python-3124/">Python 10 or higher</a>
-* <a href="https://pandas.pydata.org/docs/getting_started/install.html">Pandas 2.2 or higher </a>
-(My current working set up is Python 3.12.4 and Pandas 2.2.2)
+* <a href="https://pandas.pydata.org/docs/getting_started/install.html">Pandas 2.2  </a>
+* (My current working set up is Python 3.12.4 and Pandas 2.2.2)
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
