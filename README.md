@@ -1,9 +1,9 @@
-<a name="AI training graphical representation"></a>
+<a name="readme-top"></a>
 
 <a><img alt="Static Badge" src="https://img.shields.io/badge/1.0.2-maker?style=for-the-badge&logo=github&logoColor=white&label=version&color=lightblue"></a>
 <a><img alt="Static Badge" src="https://img.shields.io/badge/11%2F06%2F2024-maker?style=for-the-badge&logo=clockify&logoColor=white&label=last%20edited&color=violet"></a>
-<a><img alt="Static Badge" src="https://img.shields.io/badge/python-maker?style=for-the-badge&logo=python&logoColor=red&label=languages&labelColor=white&color=red"></a>
-<a><img alt="Static Badge" src="https://img.shields.io/badge/c%23-maker?style=for-the-badge&logo=c%23&logoColor=green&label=languages&labelColor=white&color=green"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/python-maker?style=for-the-badge&logo=python&logoColor=red&label=language&labelColor=white&color=red"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/c%23-maker?style=for-the-badge&logo=c%23&logoColor=green&label=language&labelColor=white&color=green"></a>
 <a href="https://www.linkedin.com/in/fabrizio-de-fiore/"><img alt="Static Badge" src="https://img.shields.io/badge/linkedin%20-maker?style=for-the-badge&logo=linkedin&logoColor=white&label=check%20out%20my&color=blue"></a>
 
 
@@ -21,11 +21,7 @@
     Python-Unity pipeline that transforms dry numerical data into engaging 3D object animations within a Unity environment    <br />
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    
   </p>
 </div>
 
@@ -35,9 +31,10 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-description">Project description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built with</a></li>
+        <li><a href="#how-does-it-work">How does it work</a></li>
       </ul>
     </li>
     <li>
@@ -57,8 +54,8 @@
 
 
  
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- Project Description -->
+## Project description
 
 This project tackles a fundamental challenge in AI development: the tedium associated with analyzing vast amounts of numerical training data.
 Traditionally, developers rely on poring over spreadsheets and charts, a process that can be time-consuming and hinder the intuitive grasp of complex relationships.
@@ -67,24 +64,35 @@ Here's why:
 * Replace static numbers with dynamic objects, allowing developers to absorb information more readily and efficiently.
 * Visualizations can highlight intricate patterns and correlations within the data that might be easily missed in numerical representations.
 * The ability to interact with the visualizations within Unity can further empower developers to explore the data in a more dynamic and engaging way.
-
+ 
 This project seeks to revolutionize the way AI developers interact with training data, fostering a more efficient and insightful development process.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-### Built With
+### Built with
 
 * ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white)
 * ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 * ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
+### How does it work
+
+The setup of the streamlined architecture for data exchange consists of the following components:
+* Unity Project: The primary application where the object to be updated resides.
+* C# Script: Attached to the aforementioned object within the Unity scene. This script acts as a server, listening for data from the Python script.
+* Python Script: This script functions as a client. It reads data from a CSV file, processes it to identify relevant information, and transmits the selected data to the Unity application.
+
+The Python script parses the CSV file, extracting and filtering the pertinent data.
+The C# script serves as a listener, awaiting data transmission from the Python client.
+Upon receiving the data, the C# script employs the received information to update the designated object within the Unity scene .
+This approach facilitates real-time communication and dynamic object updates within the Unity environment, driven by the data processing capabilities of the Python script.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## How to install and run
@@ -95,7 +103,31 @@ This project seeks to revolutionize the way AI developers interact with training
 * <a href="https://unity.com/releases/editor/whats-new/2022.3.10#installs"> Unity Editor 2022.3.10f1 or higher </a>
 * <a href="https://www.python.org/downloads/release/python-3124/">Python 10 or higher</a>
 * <a href="https://pandas.pydata.org/docs/getting_started/install.html">Pandas 2.2  </a>
-* (My current working set up is Python 3.12.4 and Pandas 2.2.2)
+* For any compatibility problem, my current working set up is Python 3.12.4, Pandas 2.2.2, Unity Editor 2022.3.10f1 and my packages list is:
+  * blinker==1.7.0
+  * click==8.1.7
+  * colorama==0.4.6
+  * filelock==3.9.0
+  * Flask==3.0.2
+  * fsspec==2023.4.0
+  * itsdangerous==2.1.2
+  * Jinja2==3.1.2
+  * MarkupSafe==2.1.3
+  * mpmath==1.3.0
+  * networkx==3.2.1
+  * numpy==1.26.4
+  * pandas==2.2.2
+  * pillow==10.2.0
+  * python-dateutil==2.9.0.post0
+  * pytz==2024.1
+  * six==1.16.0
+  * sympy==1.12
+  * torch==2.2.0+cu118
+  * torchaudio==2.2.0+cu118
+  * torchvision==0.1.6
+  * typing_extensions==4.8.0
+  * tzdata==2024.1
+  * Werkzeug==3.0.1
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
