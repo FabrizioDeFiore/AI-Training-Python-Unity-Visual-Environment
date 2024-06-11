@@ -94,9 +94,11 @@ This project seeks to revolutionize the way AI developers interact with training
 
 
 ### Prerequisites
-* Unity Hub
-* Unity Editor 2022.3.10f1 or higher
-* python 8 or higher
+* <a href="https://unity.com/download"> Unity Hub </a>
+* <a href="https://unity.com/releases/editor/whats-new/2022.3.10#installs"> Unity Editor 2022.3.10f1 or higher </a>
+* <a href="https://www.python.org/downloads/release/python-3124/">Python 10 or higher</a>
+* <a href="https://pandas.pydata.org/docs/getting_started/install.html">Pandas 2.2 or higher </a>
+(My current working set up is Python 3.12.4 and Pandas 2.2.2)
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
