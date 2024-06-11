@@ -1,21 +1,10 @@
 <a name="AI training graphical representation"></a>
 
-<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-blue">
-<img alt="Static Badge" src="https://img.shields.io/badge/last updated-date.svg-blue">
-<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-blue">
-<img alt="Static Badge" src="https://img.shields.io/badge/version-1.0.1-blue">
-
-
-<a href="https://github.com/SmartTechAIResearch/template-python-project/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/SmartTechAIResearch/template-python-project/blob/gh-pages/date.svg"></a>
-<a href="https://github.com/SmartTechAIResearch/template-python-project/actions/workflows/version.yaml"><img alt="Actions Status" src="https://github.com/SmartTechAIResearch/template-python-project/blob/gh-pages/language.svg"></a>
-
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<a><img alt="Static Badge" src="https://img.shields.io/badge/1.0.2-maker?style=for-the-badge&logo=github&logoColor=white&label=version&color=lightblue"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/11%2F06%2F2024-maker?style=for-the-badge&logo=clockify&logoColor=white&label=last%20edited&color=violet"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/python-maker?style=for-the-badge&logo=python&logoColor=red&label=languages&labelColor=white&color=red"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/c%23-maker?style=for-the-badge&logo=c%23&logoColor=green&label=languages&labelColor=white&color=green"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/linkedin%20-maker?style=for-the-badge&logo=linkedin&logoColor=white&label=check%20out%20my&color=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Ffabrizio-de-fiore%2F"></a>
 
 
 
