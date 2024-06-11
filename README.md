@@ -128,34 +128,54 @@ This approach facilitates real-time communication and dynamic object updates wit
   * typing_extensions==4.8.0
   * tzdata==2024.1
   * Werkzeug==3.0.1
+    
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+1. Install the <a href="https://unity.com/download">Unity Hub </a> 
+2. Install the recommented Unity Editor version through the hub, if not available anymore, use <a href="https://unity.com/releases/editor/whats-new/2022.3.10#installs">this link </a>
+3. Install <a href="https://www.python.org/downloads/release/python-3124/">Python 3.12.4 </a>
+4. Install Pandas packages
+    ```sh
+     python -m pip install pandas==2.2.2
+     ```
+5. Clone the repo
+   ```sh 
+   git clone https://github.com/FabrizioDeFiore/ReadmeTest.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+### Running
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To run this project, locate the directory you just cloned into your unity hub and open the project
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
+![unityhub](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/ee63c679-96f0-4b43-ae6c-8d149d24f74e)
+
+Locate the Project tab (if you can't find, use the toolbar on the top and go under Window > General > Project) and make sure you are running the scene BaseTemplate (Assets > Scenes > BaseTemplate)
+
+![projectTabh](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49)
+
+Open both the C# Listener and Python Client (Assets > Scripts > Client.py & Listener.cs)
+
+![projectTaScripts](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb)
+
+And make sure the socket reference is the same and is free in your machine, and the localhost is correct
+
+![codelistclent](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f)
+
+You can now start the application, run the "Server" first (the C# script) by cliccking on the play button in the editor (top of the screen)
+
+![play](https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/db64b3de-1bc1-4260-998a-7b0ae771b13e)
+
+The next and last step is to run the "Client" (the python script), make sure that your csv file is in the same directory of your python script (the .py and the .csv can be stored anywhere in your machine, not only in the unity project directory, nut the .cs has to be in there!)
+Once you are done you should see something like this:
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
