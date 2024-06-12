@@ -238,9 +238,34 @@ Stoom 0.0527349753492881
 CHPTemp1SP_Pred 73.03
 ```
 
-
-
 ### C# server
+
+The initial portion of the server script focuses on managing the references to the objects in the 3D environment, the connections, and the data streams. These elements can be customized based on your training data and environment : 
+* Object References: This section allows you to define references to the objects you want to update within your Unity scene. These references can include transforms (components controlling position, rotation, and scale), UI text elements (for displaying data stream names and values), and string references (used for data formatting).
+* Data Queues: This section configures queues that temporarily store incoming data before displaying it in-game. This buffering mechanism ensures a smooth visual experience by preventing overwhelming data streams.
+  <br>
+  <br>
+Here's what you can edit:
+* Transforms: Assign references to the objects you want to visually update in your Unity scene.
+* TMP_Text: Configure references to the UI text elements that will display data stream names and values.
+* Strings and Queues: Define enough string references to match the number of columns you want to read from your CSV file (strings are used for data formatting and queues for data storage).<br>
+Note: Connection references can be ignored as they don't require modification.
+
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/b42be4af-7f2b-43b1-9cbc-104cd2074a25" width="350" height="600"> </p>
+
+The second half of the server script focuses on establishing a smooth connection with the Python client and efficiently processing the received data: <br>
+The Start() function takes the lead by initializing the connection with the client, ensuring a reliable communication channel. <br>
+The receive_data_function plays a crucial role. <br>
+It accepts the connection, retrieves data streams, and performs essential transformations:
+* Stream Splitting: Incoming data strings are meticulously divided, separating the data stream name from the actual data value for each column.
+* Queue Updates: The processed data is then strategically placed in the corresponding queue, ensuring orderly storage and retrieval for later display within the game.
+
+Here's where customization comes in (Highlighted Snippet): <br>
+This section allows you to tailor the queues according to your data streams. <br>
+You can modify the number of queues and adjust their names to perfectly match your project's requirements.
+
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/50ff1ebd-9c11-45e8-bc6c-5434d2a5ef5a" width="450" height="700"> </p>
+
 ### Unity editor
 ## Basic template editing
 
