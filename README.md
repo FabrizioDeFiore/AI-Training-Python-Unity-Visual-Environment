@@ -1,11 +1,11 @@
 <a name="readme-top"></a>
-
+<p align="center"> 
 <a><img alt="Static Badge" src="https://img.shields.io/badge/1.0.2-maker?style=for-the-badge&logo=github&logoColor=white&label=version&color=lightblue"></a>
 <a><img alt="Static Badge" src="https://img.shields.io/badge/11%2F06%2F2024-maker?style=for-the-badge&logo=clockify&logoColor=white&label=last%20edited&color=violet"></a>
 <a><img alt="Static Badge" src="https://img.shields.io/badge/python-maker?style=for-the-badge&logo=python&logoColor=red&label=language&labelColor=white&color=red"></a>
 <a><img alt="Static Badge" src="https://img.shields.io/badge/c%23-maker?style=for-the-badge&logo=c%23&logoColor=green&label=language&labelColor=white&color=green"></a>
 <a href="https://www.linkedin.com/in/fabrizio-de-fiore/"><img alt="Static Badge" src="https://img.shields.io/badge/Linkedin-maker?style=for-the-badge&logo=linkedin&color=blue"></a>
-
+</p>
 
 
 <!-- PROJECT LOGO -->
@@ -177,15 +177,15 @@ To run this project, locate the directory you just cloned into your unity hub an
 
 Locate the Project tab (if you can't find, use the toolbar on the top and go under Window > General > Project) and make sure you are running the scene BaseTemplate (Assets > Scenes > BaseTemplate)
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49" width="800" height="500"> </p>
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49" width="800" height="450"> </p>
 
 Open both the C# Listener and Python Client (Assets > Scripts > Client.py & Listener.cs)
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb" width="800" height="500"> </p>
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb" width="800" height="450"> </p>
 
 And make sure the socket reference is the same and is free in your machine, and the localhost is correct
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f" width="800" height="500"> </p>
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f" width="800" height="400"> </p>
 
 You can now start the application, run the "Server" first (the C# script) by clicking on the play button in the editor (top of the screen)
 
@@ -203,9 +203,48 @@ https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/3e2230ab-9c1b-4cbf
 # How to use
 
 ## Understand the code
+The current setup provides a high degree of control for developers. By offering direct access to the Python script, C# script, and Unity environment, developers have the flexibility to deeply customize and personalize the project to their specific needs.
+This level of access fosters a strong understanding of the project's inner workings, which can be valuable for troubleshooting and advanced modifications.
 
+While this approach offers significant advantages, future development aims to further enhance user-friendliness and streamline development, by the development of a unity editor plugin. This plugin will empower Python developers to focus solely on the Python script.
+The plugin will leverage a click-and-drag interface to handle logic within the Unity environment and C# script, eliminating the need for developers to delve into these areas. This approach minimizes the learning curve, allowing them to contribute efficiently without acquiring additional skillsets.
+
+In the immediate term, if developers require prompt access to the project and the ability to make modifications, a comprehensive understanding of the project's underlying structure is paramount.
+
+### Python client
+We'll keep the Python script concise and focused. Given the project's target audience of Python developers, we anticipate a smooth understanding of this component. This allows us to dedicate more time to exploring the intricacies of other areas if needed.
+
+The initial portion of the script, following the imports, focuses on managing the connection details and CSV file reference. This section acts as the project's central configuration hub, allowing developers to easily personalize the experience.
+Here's what you can modify:
+* Host and Port: Specify the desired connection destination by adjusting the host address and port number.
+* CSV File Path: Provide the path to your custom CSV file containing the data.
+* Targeted Column: Select the specific column from the CSV file that you want to iterate through.
+
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/cfd96654-4ace-4b15-81e1-21e427974f5a" width="800" height="250"> </p>
+
+The second half of the script is designed for minimal developer intervention, assuming the desired logic for processing the CSV file remains consistent. 
+As long as the data extraction logic aligns with your project's requirements, no direct code edits are necessary within this section.
+* The red-highlighted portion manages the initial server connection and subsequent data transmission, handling these crucial steps efficiently.
+* The yellow-highlighted section takes care of iterating through each row of your chosen column(s) and transforming the data into the desired output format (as exemplified below)
+  
+<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/b5128c1e-315a-4a18-922e-cc24d48baf03" width="800" height="600"> </p>
+
+<h4>Output:</h4>
+
+```sh 
+CHPTemp1 70.571
+LoopTemp1 77.12464
+Stoom 0.0527349753492881
+CHPTemp1SP_Pred 73.03
+```
+
+
+
+### C# server
+### Unity editor
 ## Basic template editing
 
+## Chemistry lab template editing
 
 
 # Contact
