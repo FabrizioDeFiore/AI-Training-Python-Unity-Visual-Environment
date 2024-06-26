@@ -118,6 +118,24 @@ https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/1e248bc8-22c9-4468
 
 The future vision for this project entails enhancing the Unity environment for user customization through the development of a dedicated editor plugin. This plugin will cater to AI developers with expertise in Python, potentially lacking experience or possessing only rudimentary knowledge of Unity and C#. The editor plugin will empower them to modify and personalize the environment without requiring direct interaction with C# code or manipulation of 3D objects.
 
+The plugin would provide a comprehensive suite of visual editing tools within the Unity editor, allowing users to personalize various aspects of the environment without writing code:
+
+**Object Spawning and Prefab Management:**
+* Drag-and-drop prefabs (pre-configured 3D objects) from the asset library into the environment scene.
+* Position and manipulate objects using intuitive tools like gizmos, snapping, and alignment features.
+* Set object properties through visual inspectors, defining attributes relevant to training (e.g., physics, materials, textures).
+
+**Environment Composition and Layouts:**
+* Pre-built environment templates to serve as starting points or inspiration.
+* Procedural environment generation tools based on user-defined parameters (e.g., number of objects, object distributions, spatial constraints).
+* In-scene editing tools for modifying terrain, adding lighting, and setting ambient effects.
+
+**Automated Tasks and Code Generation:**
+* The plugin can automate repetitive tasks based on user-defined parameters:
+  * Populating the environment with objects based on distributions or patterns.
+  * Generating variations of the environment for training diversity.
+* The plugin can optionally generate minimal C# code under the hood to bridge the gap between visual editing and the underlying Unity functionalities. This generated code would be transparent to the user and wouldn't require manual editing.
+
 # How to install and run
 
 ## Prerequisites
@@ -171,25 +189,17 @@ The future vision for this project entails enhancing the Unity environment for u
 
 ## Running
 
-To run this project, locate the directory you just cloned into your unity hub and open the project
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/ee63c679-96f0-4b43-ae6c-8d149d24f74e" width="800" height="500" > </p>
+| To run this project, locate the directory you just cloned into your unity hub and open the project | Locate the Project tab (if you can't find, use the toolbar on the top and go under Window > General > Project) and make sure you are running the scene BaseTemplate (Assets > Scenes > BaseTemplate) |
+| :---:  | :---: |
+| <img src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/ee63c679-96f0-4b43-ae6c-8d149d24f74e"  width="500" height="250">  | <img src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49"  width="500" height="250"> |
 
-Locate the Project tab (if you can't find, use the toolbar on the top and go under Window > General > Project) and make sure you are running the scene BaseTemplate (Assets > Scenes > BaseTemplate)
+| Open both the C# Listener and Python Client (Assets > Scripts > Client.py & Listener.cs) | And make sure the socket reference is the same and is free in your machine, and the localhost is correct|
+| :---:  | :---: |
+| <img src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb"  width="500" height="250">  | <img src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f"  width="500" height="250"> |
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/67a6a476-7062-418e-b351-44aa48a73f49" width="800" height="450"> </p>
-
-Open both the C# Listener and Python Client (Assets > Scripts > Client.py & Listener.cs)
-
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/9b2653d1-3ac6-48a1-a655-5db1184f28bb" width="800" height="450"> </p>
-
-And make sure the socket reference is the same and is free in your machine, and the localhost is correct
-
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/c5bd5f08-1caa-4692-8cac-fd53a9d98f1f" width="800" height="400"> </p>
 
 You can now start the application, run the "Server" first (the C# script) by clicking on the play button in the editor (top of the screen)
-
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/db64b3de-1bc1-4260-998a-7b0ae771b13e" width="800" height="500"> </p>
 
 The next and last step is to run the "Client" (the python script), make sure that your csv file is in the same directory of your python script (the .py and the .csv can be stored anywhere in your machine, not only in the unity project directory, but the .cs has to be in there!) 
 Once you are done you should see something like this:
@@ -212,22 +222,58 @@ The plugin will leverage a click-and-drag interface to handle logic within the U
 In the immediate term, if developers require prompt access to the project and the ability to make modifications, a comprehensive understanding of the project's underlying structure is paramount.
 
 ### Python client
-We'll keep the Python script concise and focused. Given the project's target audience of Python developers, we anticipate a smooth understanding of this component. This allows us to dedicate more time to exploring the intricacies of other areas if needed.
+This code acts as a stand-in for real sensors, creating a stream of data that mimics real-time sensor readings. It reads pre-recorded sensor data from a CSV file 
 
-The initial portion of the script, following the imports, focuses on managing the connection details and CSV file reference. This section acts as the project's central configuration hub, allowing developers to easily personalize the experience.
-Here's what you can modify:
-* Host and Port: Specify the desired connection destination by adjusting the host address and port number.
-* CSV File Path: Provide the path to your custom CSV file containing the data.
-* Targeted Column: Select the specific column from the CSV file that you want to iterate through.
+```py 
+# Read data from CSV using pandas
+simulated_data = pd.read_csv("YourFileName.csv")
+```
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/cfd96654-4ace-4b15-81e1-21e427974f5a" width="800" height="250"> </p>
+The script defines a list of data stream names (data_stream_names), representing different sensor measurements we want to transmit (e.g., "CHPTemp1"). You'll need to update this list based on the actual data you want to send from the csv file, the names in the script have to match the column names.
 
-The second half of the script is designed for minimal developer intervention, assuming the desired logic for processing the CSV file remains consistent. 
-As long as the data extraction logic aligns with your project's requirements, no direct code edits are necessary within this section.
-* The red-highlighted portion manages the initial server connection and subsequent data transmission, handling these crucial steps efficiently.
-* The yellow-highlighted section takes care of iterating through each row of your chosen column(s) and transforming the data into the desired output format (as exemplified below)
-  
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/b5128c1e-315a-4a18-922e-cc24d48baf03" width="800" height="600"> </p>
+```py 
+# Define data stream names (modify these based on your actual stream names)
+data_stream_names = ["CHPTemp1", "LoopTemp1", "Stoom", "CHPTemp1SP_Pred"]
+```
+
+It establishes a network connection using a socket to the Unity application running on the same machine (localhost) at a specified port.
+This creates a communication channel between the simulated data source and the Unity application.
+
+```py 
+# HOST and PORT for connection (same as before)
+HOST = '127.0.0.1'  # localhost
+PORT = 25002
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+  s.connect((HOST, PORT))
+```
+
+The code iterates through each row of the loaded data (excluding the header row) using pandas' iterrows function. Each row represents a single timestep of sensor readings.
+
+```py 
+  for index, row in simulated_data.iterrows():
+    if index == 0:  # Skip the header row
+      continue
+```
+
+For each timestep, it constructs a single string to represent all the sensor readings at that moment. It loops through the defined data stream names and retrieves the corresponding data point value from the current row in the CSV data
+
+```py 
+    data_string = ""
+    for stream_name in data_stream_names:
+      if stream_name in row.index:  # Check if name matches index (column name)
+        data_point = row[stream_name]  # Access value by column name (index)
+      else:
+        # Handle missing column (optional)
+        data_point = "NA"  # Or a default value
+
+      data_string += f"{stream_name} {data_point}\n"  # Use f-string for formatted string
+```
+
+The constructed string containing all the combined sensor readings for that timestep is then sent to the Unity application using the established socket connection. The string is encoded in UTF-8 format before transmission 
+```py 
+    s.sendall(data_string.encode('utf-8'))
+    print(f"Sent: {data_string}")  # Print sent data for debugging
+```
 
 <h4>Output:</h4>
 
@@ -239,40 +285,57 @@ CHPTemp1SP_Pred 73.03
 ```
 
 ### C# server
+The server script focuses on establishing a smooth connection with the Python client and efficiently processing the received data:
 
-The initial portion of the server script focuses on managing the references to the objects in the 3D environment, the connections, and the data streams. These elements can be customized based on your training data and environment : 
-* Object References: This section allows you to define references to the objects you want to update within your Unity scene. These references can include transforms (components controlling position, rotation, and scale), UI text elements (for displaying data stream names and values), and string references (used for data formatting).
-* Data Queues: This section configures queues that temporarily store incoming data before displaying it in-game. This buffering mechanism ensures a smooth visual experience by preventing overwhelming data streams.
-  <br>
-  <br>
-Here's what you can edit:
-* Transforms: Assign references to the objects you want to visually update in your Unity scene.
-* TMP_Text: Configure references to the UI text elements that will display data stream names and values.
-* Strings and Queues: Define enough string references to match the number of columns you want to read from your CSV file (strings are used for data formatting and queues for data storage).<br>
-Note: Connection references can be ignored as they don't require modification.
+**Data Reception:**
+* The script listens for incoming connections on a specified port (default 25002).
+* When a client connects, it creates a thread to handle receiving data.
+* It continuously reads incoming data as byte streams.
+* The received data is decoded into strings using UTF-8 encoding.
+  
+![c#DataReception](https://github.com/FabrizioDeFiore/AI-Training-Python-Unity-Visual-Environment/assets/78561254/79de4563-d84a-4565-b985-4511ca428fac)
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/b42be4af-7f2b-43b1-9cbc-104cd2074a25" width="350" height="600"> </p>
+**Data Parsing:**
+* The received string is split into lines.
+* Each line is expected to follow a specific format: "data_stream_name data_point".
+* It extracts the data stream name (e.g., "CHPTemp1") and the data point value (e.g., a temperature).
+* It validates the data format and attempts to convert the data point to a float.
+  
+![c#DataParsing](https://github.com/FabrizioDeFiore/AI-Training-Python-Unity-Visual-Environment/assets/78561254/3cb0d98c-1eb7-4078-8bd2-ba6a26ce4b28)
 
-The second half of the server script focuses on establishing a smooth connection with the Python client and efficiently processing the received data: <br>
-The Start() function takes the lead by initializing the connection with the client, ensuring a reliable communication channel. <br>
-The receive_data_function plays a crucial role. <br>
-It accepts the connection, retrieves data streams, and performs essential transformations:
-* Stream Splitting: Incoming data strings are meticulously divided, separating the data stream name from the actual data value for each column.
-* Queue Updates: The processed data is then strategically placed in the corresponding queue, ensuring orderly storage and retrieval for later display within the game.
+**Data Queuing:**
+* Based on the data stream name, the script enqueues the parsed data point into a separate queue.
+* This allows for handling different data streams independently.
+  
+![c#DataQuequing](https://github.com/FabrizioDeFiore/AI-Training-Python-Unity-Visual-Environment/assets/78561254/d5865d27-ca47-49bd-aec8-04456f568ab4)
 
-Here's where customization comes in (Highlighted Snippet): <br>
-This section allows you to tailor the queues according to your data streams. <br>
-You can modify the number of queues and adjust their names to perfectly match your project's requirements.
+**Data Processing:**
+* Every frame, the script checks each data queue.
+* If data is available in a queue, it dequeues the value.
+* It normalizes the data point to a value between 0 and 1 (specific normalization factors applied for some streams).
+* It calculates the Y position of a corresponding object using the CalculateYPosition function (likely linear interpolation).
+* It updates the object's position and scale based on the calculated Y position and normalized data value.
+* It updates text elements in the scene to display the raw data and potentially converted values.
+  
+![c#DataProcessing](https://github.com/FabrizioDeFiore/AI-Training-Python-Unity-Visual-Environment/assets/78561254/3a8868c3-ee9d-4355-b78e-c916be872ae4)
 
-<p align="center"> <img  src="https://github.com/FabrizioDeFiore/ReadmeTest/assets/78561254/50ff1ebd-9c11-45e8-bc6c-5434d2a5ef5a" width="450" height="700"> </p>
+## What to edit
+here's what you'll need to edit every time you want to send data to Unity from a different CSV file:
 
-### Unity editor
-## Basic template editing
+**Data Source (CSV File):**
+* Update the file path in both the C# and Python code to point to your new CSV file containing the sensor data.
+  * In C#, this might involve modifying a string variable holding the file path.
+  * In Python, you'll likely change the argument passed to `pd.read_csv` to specify the new file name.
 
-## Chemistry lab template editing
+**Data Stream Names (C# Only):**
+* Modify the data_stream_names list in your C# code to match the actual column names (data stream names) present in your new CSV file.
+* The Python code doesn't require this step since it retrieves data stream names directly from the CSV file headers (using pandas indexing).
 
+**Data Handling (Optional):**
+* If your new CSV file has a different structure or data format compared to the original, you might need to adjust the data parsing logic in both C# and Python.
+  * In C#, this could involve modifying regular expressions used for splitting data lines or handling potential errors during data conversion.
+  * In Python, you might need to adapt how you access data points from the CSV rows based on column names or data types.
 
-# Contact
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
