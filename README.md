@@ -33,13 +33,13 @@
         <li><a href="#built-with">Built with</a></li>
         <li><a href="#how-does-it-work">How does it work</a></li>
       </ul>
-    <li><a href="#what's-in-the-project">What's in the project</a></li>
+    <li><a href="#scenes-in-the-project">Scenes in the project</a></li>
       <ul>
         <li><a href="#base-template">Base template</a></li>
-        <li><a href="#EnergAI:-Smart-water-grid-project-implementation">EnergAI: Smart water grid project implementation</a></li>
+        <li><a href="#energai-smart-water-grid-project-implementation">EnergAI: Smart water grid project implementation</a></li>
       </ul>
-    <li><a href="#Future-applications-and-usage">Future applications and usage</a></li>
-    <li><a href="#How-to-install-and-run">How to install and run</a></li>
+    <li><a href="#future-applications-and-usage">Future applications and usage</a></li>
+    <li><a href="#how-to-install-and-run">How to install and run</a></li>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -48,8 +48,7 @@
     <li><a href="#how-to-use">How to use</a></li>
     <ul>
         <li><a href="#understand-the-code">Understand the code</a></li>
-        <li><a href="#basic-template-editing">Basic template editing</a></li>
-        <li><a href="#chemistry-lab-template">Chemistry lab template editing</a></li>
+        <li><a href="#what to edit">What to edit</a></li>
     </ul>
   </ol>
 
@@ -95,7 +94,7 @@ This approach facilitates real-time communication and dynamic object updates wit
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-# What's in the project?
+# Scenes in the project
 
 ## Base template
 
@@ -108,7 +107,7 @@ Subsequently, the developer can execute the Python script. This script, for enha
 
 The developer's primary interaction with the codebase involves two key areas. Within the Python script, modifications can be made to the section responsible for selecting the data to be transmitted. Additionally, the format of the data can be adjusted if necessary to ensure compatibility with the trained model being employed. On the Unity side, the developer can focus on customizing the object manipulation logic within the C# code. This customization allows for tailoring the behavior of the object based on the specific needs of the project, including the names and quantities of the data elements being received.
 
-## EnergAI: Smart water grid project implementation
+## EnergAI Smart water grid project implementation
 
 Following the development of the core environment, the next stage involved adapting the basic template to represent a more intricate scenario. This scenario aimed to visualize an AI training process relevant to a project undertaken by a colleague. Her project focused on training a model to work with temperature and steam data. To facilitate this, I constructed a virtual chemistry lab environment. The environment featured four glass thermometers, each representing a crucial data value for visualization. The filling level of each thermometer scaled dynamically based on the received data. Additionally, text boxes were implemented to display the corresponding data name and its associated value. Data transmission occurred in a row-by-row manner, iterating through a CSV file and sending each row sequentially.
 
@@ -320,7 +319,7 @@ The server script focuses on establishing a smooth connection with the Python cl
 ![c#DataProcessing](https://github.com/FabrizioDeFiore/AI-Training-Python-Unity-Visual-Environment/assets/78561254/3a8868c3-ee9d-4355-b78e-c916be872ae4)
 
 ## What to edit
-here's what you'll need to edit every time you want to send data to Unity from a different CSV file:
+Here's what you'll need to edit every time you want to send data to Unity from a different CSV file:
 
 **Data Source (CSV File):**
 * Update the file path in both the C# and Python code to point to your new CSV file containing the sensor data.
