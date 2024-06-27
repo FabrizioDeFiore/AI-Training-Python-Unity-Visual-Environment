@@ -48,7 +48,7 @@
     <li><a href="#how-to-use">How to use</a></li>
     <ul>
         <li><a href="#understand-the-code">Understand the code</a></li>
-        <li><a href="#what to edit">What to edit</a></li>
+        <li><a href="#what-to-edit">What to edit</a></li>
     </ul>
   </ol>
 
@@ -141,33 +141,20 @@ The plugin would provide a comprehensive suite of visual editing tools within th
 * <a href="https://unity.com/download"> Unity Hub </a>
 * <a href="https://unity.com/releases/editor/whats-new/2022.3.10#installs"> Unity Editor 2022.3.10f1 or higher </a>
 * <a href="https://www.python.org/downloads/release/python-3124/">Python 10 or higher</a>
-* <a href="https://pandas.pydata.org/docs/getting_started/install.html">Pandas 2.2  </a>
-* For any compatibility problem, my current working set up is Python 3.12.4, Pandas 2.2.2, Unity Editor 2022.3.10f1 and my packages list is:
-  * blinker==1.7.0
-  * click==8.1.7
-  * colorama==0.4.6
-  * filelock==3.9.0
+* <a href="https://pandas.pydata.org/docs/getting_started/install.html">Pandas 2.2  </a> <br>
+
+For any compatibility problem, my current working set up is Python 3.12.4, Pandas 2.2.2, Unity Editor 2022.3.10f1 and my packages list is:
   * Flask==3.0.2
-  * fsspec==2023.4.0
-  * itsdangerous==2.1.2
-  * Jinja2==3.1.2
-  * MarkupSafe==2.1.3
   * mpmath==1.3.0
   * networkx==3.2.1
   * numpy==1.26.4
   * pandas==2.2.2
-  * pillow==10.2.0
   * python-dateutil==2.9.0.post0
-  * pytz==2024.1
-  * six==1.16.0
   * sympy==1.12
   * torch==2.2.0+cu118
   * torchaudio==2.2.0+cu118
   * torchvision==0.1.6
-  * typing_extensions==4.8.0
-  * tzdata==2024.1
-  * Werkzeug==3.0.1
-
+  
     
 ## Installation
 
